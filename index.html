@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExamPass - Student Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ExamPass</h1>
+    <p>Student Examination Clearance Portal</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Student Registration</h2>
+
+      <form id="registerForm">
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <input type="password" id="password" placeholder="Create password (8+ characters)" required minlength="8">
+        <button type="submit">Register</button>
+      </form>
+
+      <p id="message"></p>
+    </section>
+
+    <section class="card">
+      <h2>Available Examinations</h2>
+      <div id="examList">
+        <p>Semester Examination — ₹750</p>
+        <p>Internal Assessment — ₹300</p>
+      </div>
+      <p class="note">Demo display only. Exam registration requires the backend.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 ExamPass Student Portal</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
